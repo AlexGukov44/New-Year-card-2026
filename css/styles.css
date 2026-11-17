@@ -164,7 +164,7 @@ footer {
 
 @media (max-width: 450px) {
     h1 {
-        font-size: 15px;
+        font-size: 25px;
     }
     .s1, .s3 {
         width: 2px;
