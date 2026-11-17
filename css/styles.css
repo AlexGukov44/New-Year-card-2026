@@ -1,21 +1,21 @@
 body {
-    background-color: darkgray;
+    background-color: black;
     margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+h1, h2, h3 {
+    color: antiquewhite;
 }
 .haus {
     width: 100%;
     height: 800px;
     border: 2px solid black;
     background-color: black;
-    display: flex;
-    justify-content: center;
 }
 
-h1 {
-    color: antiquewhite;
-    margin: 20px auto;
-
-}
 
 .elem1 {
     width: 50px;
@@ -163,10 +163,6 @@ footer {
 
 
 @media (max-width: 450px) {
-    h1 {
-        white-space: nowrap;                /* запрещаем перенос */
-        font-size: clamp(15px, 2.9vw, 40px); /* минимум, текущий размер, максимум */
-    }
     .s1, .s3 {
         width: 2px;
         height: 2px;
