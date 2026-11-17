@@ -164,7 +164,8 @@ footer {
 
 @media (max-width: 450px) {
     h1 {
-        font-size: 18px;
+        white-space: nowrap;                /* запрещаем перенос */
+        font-size: clamp(9px, 2.9vw, 40px); /* минимум, текущий размер, максимум */
     }
     .s1, .s3 {
         width: 2px;
