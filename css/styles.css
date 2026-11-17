@@ -1,0 +1,177 @@
+body {
+    background-color: darkgray;
+    margin: 0 auto;
+}
+.haus {
+    width: 100%;
+    height: 800px;
+    border: 2px solid black;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: antiquewhite;
+    margin: 20px auto;
+
+}
+
+.elem1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    filter: blur(30px);
+    offset-path: circle(50% at 60% 40%);
+    offset-distance: 0%;
+    animation: haus 12s linear infinite;
+}
+
+
+.elem2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: blue;
+    filter: blur(20px);
+    offset-path: circle(50% at 80% 400%);
+    offset-distance: 50%;
+    animation: haus 10s linear infinite reverse;
+    animation-delay: 4s;
+}
+
+.elem3 {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    filter: blur(30px);
+    offset-path: circle(50% at 80% 400%);
+    offset-distance: 50%;
+    animation: haus 6s linear infinite;
+}
+
+.elem4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    filter: blur(30px);
+    offset-path: circle(50% at 60% 40%);
+    offset-distance: 0%;
+    animation: haus 15s linear infinite reverse;
+    animation-delay: 2s;
+}
+.elem5 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: blue;
+    filter: blur(20px);
+    offset-path: circle(50% at 80% 400%);
+    offset-distance: 50%;
+    animation: haus 10s linear infinite reverse;
+}
+.elem6 {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    filter: blur(30px);
+    offset-path: circle(50% at 80% 400%);
+    offset-distance: 50%;
+    animation: haus 14s linear infinite reverse;
+}
+
+@keyframes haus {
+    to {
+    offset-distance: 100%;
+    }
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;          /* растягиваем на весь экран, чтобы снежинки точно долетали до низа */
+    z-index: 10;
+    pointer-events: none;   /* снег не будет мешать кликам по элементам под ним */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.s1, .s3 {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    filter: blur(2px);
+    animation: sneg 15s linear infinite;
+}
+
+.s2, .s4 {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: wheat;
+    filter: blur(4px);
+    animation: sneg 10s linear infinite;
+}
+.s1 {
+    animation: sneg 15s linear infinite;
+}
+.s2 {
+    animation: sneg 9s linear infinite;
+}
+.s3 {
+    animation: sneg 10s linear infinite;
+}
+.s4 {
+    animation: sneg 19s linear infinite;
+}
+
+
+@keyframes sneg {
+    from {
+        transform: translate(0, -10 vh);
+    }
+    to {
+        transform: translate(200px, 100vh);
+    }
+}
+
+
+footer {
+    background-color: #FF9600;
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 0 -8px 8px -4px;
+}
+.social {
+    margin: 15px 0;
+}
+.social a {
+    text-decoration: none;
+}
+.social img {
+    width: 25px;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 10px;
+    }
+    .s1, .s3 {
+        width: 2px;
+        height: 2px;
+    } 
+    .s2, .s4 {
+        width: 4px;
+        height: 4px;
+    }
+}
