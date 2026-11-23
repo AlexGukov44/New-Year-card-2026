@@ -5,6 +5,8 @@ body {
 
 header {
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 h1, h2, h3 {
     color: antiquewhite;
@@ -14,6 +16,11 @@ h1, h2, h3 {
     height: 800px;
     border: 2px solid black;
     background-color: black;
+    margin-top: -150px;      /* наезжаем на header сверху на 150px */
+    padding-top: 150px;      /* контент внутри остаётся на своём месте */
+    position: relative;
+    z-index: 2;
+    overflow: hidden;   /* всё, что вылезло, обрезается */
 }
 
 
@@ -95,6 +102,8 @@ main {
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    overflow: hidden;   /* всё, что вышло за пределы main, обрезается */
     height: 100vh;          /* растягиваем на весь экран, чтобы снежинки точно долетали до низа */
     z-index: 10;
     pointer-events: none;   /* снег не будет мешать кликам по элементам под ним */
@@ -136,10 +145,10 @@ main {
 
 @keyframes sneg {
     from {
-        transform: translate(0, -10 vh);
+        transform: translate(0, -10px);
     }
     to {
-        transform: translate(200px, 100vh);
+        transform: translate(20%, calc(100vh - 1px));
     }
 }
 
@@ -149,6 +158,8 @@ footer {
     border: 1px solid black;
     text-align: center;
     box-shadow: 0 -8px 8px -4px;
+    position: relative;   /* без этого z-index не работает */
+    z-index: 20;          /* выше, чем z-index: 10 у main */
 }
 .social {
     margin: 15px 0;
