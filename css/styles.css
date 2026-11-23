@@ -97,7 +97,7 @@ h1, h2, h3 {
     }
 }
 
-main {
+.sneg {
     position: absolute;
     top: 0;
     left: 0;
@@ -112,6 +112,26 @@ main {
     justify-content: space-around;
     margin: 0 auto;
 }
+
+.sneg > div {
+    /* сбрасываем снежинковые свойства, обёртка — прозрачный контейнер */
+    width: auto;
+    height: auto;
+    background: none;
+    border-radius: 0;
+    filter: none;
+    animation: sway 7s ease-in-out infinite alternate;
+}
+.sneg > div:nth-child(2n) {
+    animation-duration: 9s;
+    animation-delay: -3s;
+}
+@keyframes sway {
+    from { transform: translateX(-40px); }
+    to   { transform: translateX(40px); }
+}
+
+
 .s1, .s3 {
     width: 3px;
     height: 3px;
@@ -129,6 +149,7 @@ main {
     filter: blur(4px);
     animation: sneg 10s linear infinite;
 }
+
 .s1 {
     animation: sneg 15s linear infinite;
 }
@@ -148,8 +169,14 @@ main {
         transform: translate(0, -10px);
     }
     to {
-        transform: translate(20%, calc(100vh - 1px));
+        transform: translate(20%, 100vh);
     }
+    0%   { transform: translate(0, -10px); }
+    25%  { transform: translate(60px, 25vh); }
+    50%  { transform: translate(160px, 50vh); }
+    75%  { transform: translate(100px, 75vh); }
+    100% { transform: translate(200px, 100vh); }
+
 }
 
 
