@@ -25,11 +25,11 @@ h1, h2, h3 {
 
 
 .elem1 {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: red;
-    filter: blur(30px);
+    filter: blur(100px);
     offset-path: circle(50% at 60% 40%);
     offset-distance: 0%;
     animation: haus 12s linear infinite;
@@ -37,11 +37,11 @@ h1, h2, h3 {
 
 
 .elem2 {
-    width: 60px;
-    height: 60px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-color: blue;
-    filter: blur(20px);
+    filter: blur(100px);
     offset-path: circle(50% at 80% 400%);
     offset-distance: 50%;
     animation: haus 10s linear infinite reverse;
@@ -49,43 +49,43 @@ h1, h2, h3 {
 }
 
 .elem3 {
-    width: 55px;
-    height: 55px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     background-color: greenyellow;
-    filter: blur(30px);
+    filter: blur(100px);
     offset-path: circle(50% at 80% 400%);
     offset-distance: 50%;
     animation: haus 6s linear infinite;
 }
 
 .elem4 {
-    width: 50px;
-    height: 50px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    background-color: red;
-    filter: blur(30px);
+    background-color: rgb(255, 0, 230);
+    filter: blur(150px);
     offset-path: circle(50% at 60% 40%);
     offset-distance: 0%;
     animation: haus 15s linear infinite reverse;
     animation-delay: 2s;
 }
 .elem5 {
-    width: 60px;
-    height: 60px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
-    background-color: blue;
-    filter: blur(20px);
+    background-color: rgb(102, 0, 255);
+    filter: blur(100px);
     offset-path: circle(50% at 80% 400%);
     offset-distance: 50%;
     animation: haus 10s linear infinite reverse;
 }
 .elem6 {
-    width: 55px;
-    height: 55px;
+    width: 155px;
+    height: 155px;
     border-radius: 50%;
-    background-color: greenyellow;
-    filter: blur(30px);
+    background-color: rgb(47, 238, 255);
+    filter: blur(100px);
     offset-path: circle(50% at 80% 400%);
     offset-distance: 50%;
     animation: haus 14s linear infinite reverse;
@@ -138,16 +138,28 @@ h1, h2, h3 {
     border-radius: 50%;
     background-color: whitesmoke;
     filter: blur(2px);
-    animation: sneg 15s linear infinite;
 }
-
+.s5 , .s7 {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    filter: blur(2px);
+}
 .s2, .s4 {
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background-color: wheat;
     filter: blur(4px);
-    animation: sneg 10s linear infinite;
+}
+
+.s6, .s8 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: wheat;
+    filter: blur(4px);
 }
 
 .s1 {
@@ -161,6 +173,18 @@ h1, h2, h3 {
 }
 .s4 {
     animation: sneg 19s linear infinite;
+}
+.s5 {
+    animation: sneg 14s linear infinite;
+}
+.s6 {
+    animation: sneg 5s linear infinite;
+}
+.s7 {
+    animation: sneg 17s linear infinite;
+}
+.s8 {
+    animation: sneg 17s linear infinite;
 }
 
 
