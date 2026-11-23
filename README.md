@@ -17,4 +17,4 @@
 2. **Через GitHub Pages:** проект размещён на GitHub Pages — откройте ссылку вида `https://github.com/AlexGukov44/New-Year-card-2026`, чтобы увидеть открытку в браузере.
 
 
-[text](blob:vscode-file%3A//vscode-app/81b48a17-fa02-47ff-b899-342d41b5d27f)
+![alt text](image.png)
